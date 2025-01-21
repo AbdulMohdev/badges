@@ -10,7 +10,7 @@ const makeCommit = async (n) => {
 
     const x = Math.floor(Math.random() * 55);
     const y = Math.floor(Math.random() * 10);
-    const DATE = moment().subtract(12, 'y').add(1, 'd').add(x, 'w').add(y, 'd').format();
+    const DATE = moment().subtract(1, 'y').add(1, 'd').add(x, 'w').add(y, 'd').format();
 
     const data = { date: DATE };
     console.log(DATE);
